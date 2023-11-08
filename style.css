@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'SUIT-Regular';
+    font-weight: 700;
+}
+
+.title {
+    width: 80%; 
+    margin: 30px auto; 
+    border-bottom: 2px solid #333; 
+    font-size: 32px; 
+    line-height: 55px; 
+    font-weight: bold;
+}
+
+.movies {
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 20.1%; 
+    height: 470px;
+    margin-top: 80px;
+}
+
+.movie img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie p {
+    height: 70px; 
+    padding-top: 5px;
+    padding-left: 5px;
+    line-height: 27px;
+}
+
+.movie a {
+    width: 120px; 
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px; 
+    margin: 0 auto; 
+    background-color: #e65050;
+    color: #fff; 
+    text-align: center; 
+    display: block;
+}
+
+.movie .reservation {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+
+
