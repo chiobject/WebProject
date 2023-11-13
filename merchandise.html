@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./buyer.css">
+</head>
+
+<body>
+    <header>
+        <div class="h_top">
+            <div class="inner_wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/GGV.jpg" alt="">
+                        <p>DONGJUSEOHYUN</p>
+                    </a>
+                </div>
+                <ul class="h_top_menu">
+                    <li>
+                        <a href="./login.html">
+                            <img src="./img/로그인.png" alt="">
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/회원가입.png" alt="">
+                            <p>회원가입</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mypage.html">
+                            <img src="./img/MYCGV.png" alt="">
+                            <p>MY GGV</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/고객센터.png" alt="">
+                            <p>고객센터</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_menu">
+            <div class="inner_wrap">
+                <ul class="menu">
+                    <li><a href="index.html">영화</a></li>
+                    <li><a href="#">극장</a></li>
+                    <li><a href="movie.html">예매</a></li>
+                    <li><a href="#" class="on">스토어</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">혜택</a></li>
+                </ul>
+                <div class="h_search">
+                    <input type="text" class="search">
+                    <button class="search_btn">
+                        <img src="./img/검색.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inner_wrap">
+            <div class="title">우리 패키지</div>
+            <div class="wrap">
+                <img src="./img/팝콘.jpg" alt="" class="img">
+                <div class="wrapwrap">
+                    <h2>61,000원</h2>
+                    <div class="ineer_wrapwrap">
+                        <div class="gift_wrap">
+                            <p class="gift">상품구성</p>
+                            <p>일반 영화 관람권 4매+더블콤보 1개</p>
+                        </div>
+                        <div class="gift_wrap">
+                            <p class="gift">유효기간</p>
+                            <p>CGV 영화 관람권 : 구매일로부터 24개월 이내<br>더블콤보 : 구매일로부터 6개월 이내</p>
+                        </div>
+                        <div class="gift_wrap">
+                            <p class="gift">원산지</p>
+                            <p>팝콘(옥수수:미국산)</p>
+                        </div>
+                    </div>
+                    <div class="button_wrap">
+                        <div class="total_button">
+                            <button id="minus" onclick="minus()">-</button>
+                            <p style="text-align: center;" id="amount">1</p>
+                            <button id="plus" onclick="plus()">+</button>
+                        </div>
+                        <p class="price">구매금액 <span class="total_price"><span id="value">61000</span>원</span></p>
+                    </div>
+                    <div class="btn_wrap">
+                        <input type="submit" onclick="alert('선물 구매가 완료되었습니다!'); location.href='./index.html';"
+                            class="gift_btn" value="선물하기">
+                        <input type="submit" onclick="alert('구매가 완료되었습니다!'); location.href='./index.html';"
+                            class="gift_btn" value="구매하기">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner_wrap">
+            <ul class="footer_list">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">사이버감사실</a></li>
+            </ul>
+            <p>(58554)전라남도 무안군 청계면 영산로 1666 (국립목포대학교)</p>
+            <p>웹프로그래밍1: I조 팀원1: 박서현(223608) 팀원2: 박동주(203615) 팀프로젝트 주제 : 영화관 사이트 만들기</p>
+            <p>참고 사이트: CJ CGV 제작 사이트: GGV DONGJUSEOHYUN </p>
+            <p>© CJ CGV. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    var num = 1;
+    var price = 61000;
+
+    function minus() {
+        if (num > 0) {
+            num = --num;
+        } else {
+            alert("1이하는 불가능합니다.");
+        }
+        val()
+    }
+    function plus() {
+        num = ++num;
+
+        val()
+    }
+
+    function val() {
+        document.getElementById("amount").innerText = num;
+        document.getElementById("value").innerText = num * price;
+    }
+
+
+
+
+</script>
+
+</html>

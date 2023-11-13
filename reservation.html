@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./reservation.css">
+    <script src="reservation_button.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h_top">
+            <div class="inner_wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/GGV.jpg" alt="">
+                        <p>DONGJUSEOHYUN</p>
+                    </a>
+                </div>
+                <ul class="h_top_menu">
+                    <li>
+                        <a href="./login.html">
+                            <img src="./img/로그인.png" alt="">
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/회원가입.png" alt="">
+                            <p>회원가입</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mypage.html">
+                            <img src="./img/MYCGV.png" alt="">
+                            <p>MY GGV</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/고객센터.png" alt="">
+                            <p>고객센터</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_menu">
+            <div class="inner_wrap">
+                <ul class="menu">
+                    <li><a href="index.html">영화</a></li>
+                    <li><a href="#">극장</a></li>
+                    <li><a href="movie.html" class="on">예매</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">혜택</a></li>
+                </ul>
+                <div class="h_search">
+                    <input type="text" class="search">
+                    <button class="search_btn">
+                        <img src="./img/검색.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inner_wrap">
+            <div class="title">영화 예매</div>
+            <div class="graybox">
+                <div class="Screen">
+                    <p class ="Screen_text"> Screen </p>
+                </div>
+                <div class="seat-seatpicker">
+                    <div class="ROW-a">
+                        <div class="ROW-a-LEFT">
+                            <button class="rectangle" id="A1" onclick="changeColor('A1')">A1</button>
+                            <button class="div" id="A2" onclick="changeColor('A2')">A2</button>
+                        </div>
+                        <div class="ROW-a-MIDDLE">
+                            <button class="rectangle" id="A3" onclick="changeColor('A3')">A3</button>
+                            <button class="div" id="A4" onclick="changeColor('A4')">A4</button>
+                            <button class="rectangle-2" id="A5" onclick="changeColor('A5')">A5</button>
+                            <button class="rectangle-3" id="A6" onclick="changeColor('A6')">A6</button>
+                            <button class="rectangle-4" id="A7" onclick="changeColor('A7')">A7</button>
+                            <button class="rectangle-5" id="A8" onclick="changeColor('A8')">A8</button>
+                        </div>
+                        <div class="ROW-a-RIGHT">
+                            <button class="rectangle" id="A9" onclick="changeColor('A9')">A9</button>
+                            <button class="div" id="A10" onclick="changeColor('A10')">A10</button>
+                            <button class="rectangle-6" id="A11" onclick="changeColor('A11')">A11</button>
+                        </div>
+                    </div>
+                    <div class="ROW-b">
+                        <div class="ROW-a-LEFT">
+                            <button class="rectangle" id="B1" onclick="changeColor('B1')">B1</button>
+                            <button class="rectangle-7" id="B2" onclick="changeColor('B2')">B2</button>
+                        </div>
+                        <div class="ROW-a-MIDDLE">
+                            <button class="rectangle" id="B3" onclick="changeColor('B3')">B3</button>
+                            <button class="div" id="B4" onclick="changeColor('B4')">B4</button>
+                            <button class="rectangle-2" id="B5" onclick="changeColor('B5')">B5</button>
+                            <button class="rectangle-3" id="B6" onclick="changeColor('B6')">B6</button>
+                            <button class="rectangle-4" id="B7" onclick="changeColor('B7')">B7</button>
+                            <button class="rectangle-5" id="B8" onclick="changeColor('B8')">B8</button>
+                        </div>
+                        <div class="ROW-a-RIGHT">
+                            <button class="rectangle" id="B9" onclick="changeColor('B9')">B9</button>
+                            <button class="div" id="B10" onclick="changeColor('B10')">B10</button>
+                            <button class="rectangle-6" id="B11" onclick="changeColor('B11')">B11</button>
+                        </div>
+                    </div>
+                    <div class="ROW-c">
+                        <div class="ROW-a-LEFT">
+                            <button class="rectangle" id="C1" onclick="changeColor('C1')">C1</button>
+                            <button class="div" id="C2" onclick="changeColor('C2')">C2</button>
+                        </div>
+                        <div class="ROW-a-MIDDLE">
+                            <button class="rectangle" id="C3" onclick="changeColor('C3')">C3</button>
+                            <button class="rectangle-7" id="C4" onclick="changeColor('C4')">C4</button>
+                            <button class="rectangle-2" id="C5" onclick="changeColor('C5')">C5</button>
+                            <button class="rectangle-3" id="C6" onclick="changeColor('C6')">C6</button>
+                            <button class="rectangle-8" id="C7" onclick="changeColor('C7')">C7</button>
+                            <button class="rectangle-9" id="C8" onclick="changeColor('C8')">C8</button>
+                        </div>
+                        <div class="ROW-a-RIGHT">
+                            <button class="rectangle" id="C9" onclick="changeColor('C9')">C9</button>
+                            <button class="div" id="C10" onclick="changeColor('C10')">C10</button>
+                            <button class="rectangle-6" id="C11" onclick="changeColor('C11')">C11</button>
+                        </div>
+                    </div>
+                    <div class="ROW-d">
+                        <div class="ROW-a-LEFT">
+                            <button class="rectangle" id="D1" onclick="changeColor('D1')">D1</button>
+                            <button class="div" id="D2" onclick="changeColor('D2')">D2</button>
+                        </div>
+                        <div class="ROW-a-MIDDLE">
+                            <button class="rectangle" id="D3" onclick="changeColor('D3')">D3</button>
+                            <button class="div" id="D4" onclick="changeColor('D4')">D4</button>
+                            <button class="rectangle-2" id="D5" onclick="changeColor('D5')">D5</button>
+                            <button class="rectangle-3" id="D6" onclick="changeColor('D6')">D6</button>
+                            <button class="rectangle-4" id="D7" onclick="changeColor('D7')">D7</button>
+                            <button class="rectangle-5" id="D8" onclick="changeColor('D8')">D8</button>
+                        </div>
+                        <div class="ROW-a-RIGHT">
+                            <button class="rectangle" id="D9" onclick="changeColor('D9')">D9</button>
+                            <button class="div" id="D10" onclick="changeColor('D10')">D10</button>
+                            <button class="rectangle-6" id="D11" onclick="changeColor('D11')">D11</button>
+                        </div>
+                    </div>
+                    <div class="ROW-NAME">
+                        <div class="text-wrapper-2">A</div>
+                        <div class="text-wrapper-3">B</div>
+                        <div class="text-wrapper-4">C</div>
+                        <div class="text-wrapper-5">D</div>
+                    </div>
+                    <div class="group-2">
+                        <div class="overlap">
+                            <div class="text-wrapper-6">선택한 좌석</div>
+                            <hr class="line2">
+                            <div class = "seat_div">
+                                <p class="seat" id="seat"></p>
+                            </div>
+                        </div>
+                        <div class="overlap-2">
+                            <div class="text-wrapper-7">총 가격</div>
+                            <hr class="line3">
+                            <div class = "price_div">
+                                <p class="price" id="price">0 원</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reservation" onclick="reservation()">
+                        예매하기
+                    </button>
+                    <button class="reset" onclick="reset()">
+                        초기화하기
+                    </button>
+                    <div class="icon">
+                        <div class="rectangle-10"></div>
+                        <div class="rectangle-11"></div>
+                        <div class="rectangle-12"></div>
+                        <div class="text-wrapper-10">예약가능</div>
+                        <div class="text-wrapper-11">예약불가</div>
+                        <div class="text-wrapper-12">선택중</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner_wrap">
+            <ul class="footer_list">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">사이버감사실</a></li>
+            </ul>
+            <p>(58554)전라남도 무안군 청계면 영산로 1666 (국립목포대학교)</p>
+            <p>웹프로그래밍1: I조 팀원1: 박서현(223608) 팀원2: 박동주(203615) 팀프로젝트 주제 : 영화관 사이트 만들기</p>
+            <p>참고 사이트: CJ CGV 제작 사이트: GGV DONGJUSEOHYUN </p>
+            <p>© CJ CGV. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <header>
+        <div class="h_top">
+            <div class="inner_wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/GGV.jpg" alt="">
+                        <p>DONGJUSEOHYUN</p>
+                    </a>
+                </div>
+                <ul class="h_top_menu">
+                    <li>
+                        <a href="./login.html">
+                            <img src="./img/로그인.png" alt="">
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/회원가입.png" alt="">
+                            <p>회원가입</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mypage.html">
+                            <img src="./img/MYCGV.png" alt="">
+                            <p>MY GGV</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/고객센터.png" alt="">
+                            <p>고객센터</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h_menu">
+            <div class="inner_wrap">
+                <ul class="menu">
+                    <li><a href="index.html">영화</a></li>
+                    <li><a href="#">극장</a></li>
+                    <li><a href="movie.html">예매</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">혜택</a></li>
+                </ul>
+                <div class="h_search">
+                    <input type="text" class="search">
+                    <button class="search_btn">
+                        <img src="./img/검색.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inner_wrap">
+            <div class="title">
+                로그인
+            </div>
+            <div class="login">
+                <h3 class="mention">아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해주세요.</h3>
+                <input type="text" placeholder="Your id">
+                <input type="password" placeholder="Your password">
+                <button onclick="login()" class="login_btn">로그인</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner_wrap">
+            <ul class="footer_list">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">사이버감사실</a></li>
+            </ul>
+            <p>(58554)전라남도 무안군 청계면 영산로 1666 (국립목포대학교)</p>
+            <p>웹프로그래밍1: I조 팀원1: 박서현(223608) 팀원2: 박동주(203615) 팀프로젝트 주제 : 영화관 사이트 만들기</p>
+            <p>참고 사이트: CJ CGV 제작 사이트: GGV DONGJUSEOHYUN </p>
+            <p>© CJ CGV. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    function login() {
+        alert("로그인이 되었습니다.");
+        location.href = "./index.html";
+    }
+</script>
+
+</html>

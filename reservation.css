@@ -1,0 +1,460 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'SUIT-Regular';
+    font-weight: 700;
+}
+
+.title {
+    width: 80%; 
+    margin: 30px auto; 
+    border-bottom: 2px solid #333; 
+    font-size: 32px; 
+    line-height: 55px; 
+    font-weight: bold;
+}
+
+.graybox {
+    width: 1200px !important;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 10px 30px 45px;
+    background-color: rgb(248, 248, 248);
+}
+
+.graybox .Screen {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height : 40px;
+    text-align: center;
+    background: gray;
+    text-align: center;
+    justify-content: center;
+}
+
+.Screen .Screen_text{
+    color: #fff;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 30px;
+}
+
+.graybox .seat-seatpicker {
+    position: absolute;
+    width: 800px;
+    height: 395px;
+    margin-top: 30px;
+    margin-left: -140px;
+}
+
+.graybox .ROW-a {
+    position: absolute;
+    width: 675px;
+    height: 40px;
+    top: 70px;
+    left: 0;
+}
+
+.graybox .ROW-a-LEFT {
+    width: 96px;
+    left: 0;
+    position: absolute;
+    height: 40px;
+    top: 0;
+}
+
+.graybox .rectangle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: #c4c4c4;
+}
+
+.graybox .div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 56px;
+    background-color: #c4c4c4;
+}
+
+.graybox .ROW-a-MIDDLE {
+    width: 328px;
+    left: 146px;
+    position: absolute;
+    height: 40px;
+    top: 0;
+}
+
+.graybox .rectangle-2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 116px;
+    background-color: rgb(196, 196, 196)
+}
+
+.graybox .rectangle-3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 176px;
+    background-color: #c4c4c4;
+}
+
+.graybox .rectangle-4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 232px;
+    background-color: #c4c4c4;
+}
+
+.graybox .rectangle-5 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 288px;
+    background-color: #c4c4c4;
+}
+
+.graybox .ROW-a-RIGHT {
+    width: 152px;
+    left: 523px;
+    position: absolute;
+    height: 40px;
+    top: 0;
+}
+
+.graybox .rectangle-6 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 112px;
+    background-color: #c4c4c4;
+}
+
+.graybox .ROW-b {
+    position: absolute;
+    width: 675px;
+    height: 40px;
+    top: 150px;
+    left: 0;
+}
+
+.graybox .rectangle-7 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 56px;
+    background-color: #000000;
+}
+
+.graybox .ROW-c {
+    position: absolute;
+    width: 675px;
+    height: 40px;
+    top: 224px;
+    left: 0;
+}
+
+.graybox .rectangle-8 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 232px;
+    background-color: #c4c4c4;
+}
+
+.graybox .rectangle-9 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 288px;
+    background-color: #c4c4c4;
+}
+
+.graybox .ROW-d {
+    position: absolute;
+    width: 675px;
+    height: 40px;
+    top: 294px;
+    left: 0;
+}
+
+.graybox .ROW-NAME {
+    position: absolute;
+    width: 29px;
+    height: 227px;
+    top: 75px;
+    left: 700px;
+}
+
+.graybox .text-wrapper-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.graybox .text-wrapper-3 {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.graybox .text-wrapper-4 {
+    position: absolute;
+    top: 152px;
+    left: 0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.graybox .text-wrapper-5 {
+    position: absolute;
+    top: 223px;
+    left: 0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.graybox .group-2 {
+    position: absolute;
+    width: 190px;
+    height: 241px;
+    top: 70px;
+    left: 758px;
+}
+
+.graybox .overlap {
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 186px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 235, 235)
+}
+
+.graybox .overlap .text-wrapper-6 {
+    font-family: "Inter-Regular", Helvetica;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    line-height: normal;
+    white-space: nowrap;
+    margin : 5px 0px 5px 0px; 
+}
+
+.graybox .overlap .line2{
+    width: 100%;
+    top: 37px;
+    height: 1px;
+    border:none;
+    background-color:black;
+}
+
+.graybox .overlap .seat_div{
+    width : 90%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graybox .overlap .seat{
+    font-size: 20px;
+    color:#000000;
+    text-align: center;
+    justify-content: center;
+}
+
+.graybox .overlap-2 {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    width: 186px;
+    height: 120px;
+    top: 140px;
+    left: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.graybox .overlap-2 .text-wrapper-7 {
+    font-family: "Inter-Regular", Helvetica;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    line-height: normal;
+    white-space: nowrap;
+    margin : 5px 0px 5px 0px; 
+}
+
+.graybox .overlap-2 .line3{
+    width: 100%;
+    top: 37px;
+    height: 1px;
+    border:none;
+    background-color:black;
+}
+
+.graybox .overlap-2 .price_div{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graybox .overlap-2 .price{
+    font-size: 20px;
+    color:#000000;
+    text-align: center;
+}
+
+.graybox .reservation {
+    position: absolute;
+    width: 166px;
+    height: 58px;
+    top: 380px;
+    left: 770px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #4427f5;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+}
+
+.graybox .reset {
+    position: absolute;
+    width: 166px;
+    height: 58px;
+    top: 380px;
+    left: 540px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #ff0000;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+}
+
+.graybox .icon{
+    position:absolute;
+    top: 50px;
+}
+
+.icon .rectangle-10 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 349px;
+    left: 0;
+    background-color: #c4c4c4;
+}
+
+.icon  .rectangle-11 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 349px;
+    left: 120px;
+    background-color: #1b1b1b;
+}
+
+.icon .rectangle-12 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 349px;
+    left: 240px;
+    background-color: #4427f5;
+}
+
+.icon .text-wrapper-10 {
+    position: absolute;
+    top: 345px;
+    left: 27px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.icon .text-wrapper-11 {
+    position: absolute;
+    top: 345px;
+    left: 147px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.icon  .text-wrapper-12 {
+    position: absolute;
+    top: 345px;
+    left: 267px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
